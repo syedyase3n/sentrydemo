@@ -1,0 +1,6 @@
+[defaults]
+project=sentry-demo
+org=abc-9gi
+
+[auth]
+token=7af51c676a6643a482bdb81f541d834cda75c0a9e45247598598682d3ba1e45c
