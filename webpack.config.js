@@ -1,5 +1,5 @@
 const path = require('path');
-const SentryWebpackPlugin = require("@sentry/webpack-plugin");
+const SentryPlugin = require("@sentry/webpack-plugin");
 // const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -7,6 +7,7 @@ module.exports = {
   devtool: "source-map",
   entry: './src/index.ts',
   output: {
+    publicPath: 'lib',
     path: path.resolve(__dirname, 'lib'),
   },
 
@@ -25,7 +26,7 @@ module.exports = {
   },
 
   devServer: {
-    static: path.join(__dirname, "./"),
+    static: path.join(__dirname, "./lib"),
     compress: true,
     hot: true,
     port: 9001,

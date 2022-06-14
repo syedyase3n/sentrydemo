@@ -1,12 +1,7 @@
 
-const  headers= {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json',
- }
+const inp = document.querySelector("#inp") as HTMLInputElement;
 
- const inp = document.querySelector("#inp") as HTMLInputElement;
-
-export function greet(){
+export function display(){
     alert(inp.value)
 }
 
